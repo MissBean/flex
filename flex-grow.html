@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>flex</title>
+    <style type="text/css">
+      div span {
+          color: tomato;
+      }
+      .box{
+        display:-webkit-flex;
+        display:flex;
+        width:600px;margin:0;padding:10px;list-style:none;background-color:#eee;}
+      .box li{width:100px;height:100px;border:1px solid #aaa;text-align:center;}
+      #box li:nth-child(2){
+        -webkit-flex-grow:1;
+        flex-grow:1;
+      }
+      #box li:nth-child(3){
+        -webkit-flex-grow:2;
+        flex-grow:2;
+      }
+    </style>
+</head>
+<body>
+    <div>flex-grow的默认值为0，如果没有显示定义该属性，是不会拥有分配剩余空间权利的。本例中b,c两项都显式的定义了flex-grow，可以看到总共将剩余空间<span>(这里剩余空间指的是整体的宽减掉每个li的宽乘于li的个数这里是600-102*5也就是90)</span>分成了3份，其中b占1份，c占2分，即1:2<span>(这里就是30：60)</span></div>
+
+    <ul id="box" class="box">
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+      <li>d</li>
+      <li>e</li>
+    </ul>
+
+    <p>剩余空间小于0时，定义的li的宽会失效，所有li的宽相等，相当于flex:1的效果</p>
+</body>
+</html>

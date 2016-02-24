@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>align-self</title>
+<meta name="author" content="silence" />
+<style>
+h1{font:bold 20px/1.5 georgia,simsun,sans-serif;}
+.box{
+    display:-webkit-flex;
+    display:flex;
+    width:220px;
+    height: 200px;
+    margin:0;
+    padding:10px;
+    list-style:none;
+    background-color:#eee;
+    align-items: flex-end;
+}
+.box li{width:100px;height:100px;background: orange;margin: 10px;text-align:center;}
+#box{
+    -webkit-flex-wrap:nowrap;
+    flex-wrap:nowrap;
+}
+#box li:nth-child(2) {
+    align-self: center;
+}
+</style>
+</head>
+<body>
+    <h1>flex-wrap示例：</h1>
+    <ul id="box" class="box">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+</body>
+</html>
+            

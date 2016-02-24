@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>flex-direction</title>
+<style>
+    h1{font:bold 20px/1.5 georgia,simsun,sans-serif;}
+    .box{
+        display:-webkit-flex;
+        display:flex;
+        margin:0;padding:10px;list-style:none;background-color:#eee;}
+    .box li{width:100px;height:100px; margin: 10px; background: orange ; text-align:center;}
+    #box{
+        -webkit-flex-direction:row;
+        flex-direction:row;
+    }
+    #box li:nth-of-type(2) {order:-1;}
+</style>
+</head>
+<body>
+    <h1>flex-direction示例：</h1>
+    <ul id="box" class="box">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+</body>
+</html>
+            

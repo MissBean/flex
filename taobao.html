@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>flexible</title>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        box-sizing: border-box;
+    }
+    *,*:before,*:after{
+        box-sizing: inherit;
+    }
+    body{
+        max-width: 10.0rem;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+    /*.....................font-size set....................*/
+    div{
+        font-size: 12px;
+    }
+    [data-dpr="2"] div{
+        font-size: 24px;
+    }
+    [data-dpr="3"] div{
+        font-size: 36px;
+    }
+
+    .font14{
+        font-size: 14px;
+    }
+    [data-dpr="2"] .font14{
+        font-size: 28px;
+    }
+    [data-dpr="3"] .font14{
+        font-size: 42px;
+    }
+
+    .font16{
+        font-size: 16px;
+    }
+    [data-dpr="2"] .font16{
+        font-size: 32px;
+    }
+    [data-dpr="3"] .font16{
+        font-size: 48px;
+    }
+
+    .font18{
+        font-size: 18px;
+    }
+    [data-dpr="2"] .font18{
+        font-size: 36px;
+    }
+    [data-dpr="3"] .font18{
+        font-size: 54px;
+    }
+
+    .font20{
+        font-size: 20px;
+    }
+    [data-dpr="2"] .font20{
+        font-size: 40px;
+    }
+    [data-dpr="3"] .font20{
+        font-size: 60px;
+    }
+
+    /*.....................start....................*/
+    .g-wrap{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #f5294c;
+        overflow-y: auto;
+        padding-bottom: 0.133333rem;
+    }
+    .g-til{
+        width: 10.0rem;
+        height: 6.533333rem;
+        background: url(images/tit-pic.jpg) no-repeat;
+        background-size: contain;
+    }
+    .m-list{
+
+    }
+    .m-list li{
+        width: 9.706667rem;
+        height: 2.666667rem;
+        margin: 0 auto;
+        background-color: #fff;
+        margin-bottom: 1px;
+    }
+    .goods{
+        width: 2.346667rem;
+        height: 2.346667rem;
+        line-height: 2.346667rem;
+        font-size: 0;
+        float: left;
+        margin-top: 0.16rem;
+    }
+    .goods img{
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        border: 0;
+    }
+    .goods-details{
+        height: 2.666667rem;
+        padding-top: 0.16rem;
+        padding-left: 2.56rem;
+        position: relative;
+    }
+    .goods-til{
+    }
+    .dis-wrap{
+    }
+    .goods-tag{
+        display: inline-block;
+        padding: 0.053333rem 0.08rem;
+        background-color: #f5294c;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        vertical-align: middle;
+    }
+    .goods-price{
+        color: #f5294c;
+        vertical-align: middle;
+    }
+    .goods-dis{
+        color: #f5294c;
+        vertical-align: middle;
+    }
+    .goods-sold{
+        color: #fd5100;
+    }
+    .btn{
+        position: absolute;
+        padding: 0.066667rem 0.266667rem;
+        text-align: center;
+        background-color: #f5294c;
+        color: #fff;
+        right: 0.2rem;
+        bottom: 0.2rem;
+        border-radius: 2px;
+    }
+    </style>
+</head>
+<body>
+    <div class="g-wrap">
+        <div class="g-til"></div>
+        <ul class="m-list">
+            <li>
+                <a class="goods" href="javascript:;">
+                    <img src="images/a.png" alt="">
+                </a>
+                <div class="goods-details">
+                    <p class="goods-til font16">ONLY2015秋装新品七分袖弹力修身针织衫女</p>
+                    <div class="dis-wrap">
+                        <span class="goods-tag font14">双11价</span>
+                        <span class="goods-price font20">¥700.00</span>
+                        <span class="goods-dis font16">满300减150</span>
+                    </div>
+                    <p class="goods-sold font16">2838人正在疯抢</p>
+                    <a class="btn font16" href="javascript:;">马上抢！</a>
+                </div>
+            </li>
+            <li>
+                <a class="goods" href="javascript:;">
+                    <img src="images/b.png" alt="">
+                </a>
+                <div class="goods-details">
+                    <p class="goods-til font16">现货【送皮套+钢模+耳机】Xiaomi/小米红米Note2手机note2</p>
+                    <div class="dis-wrap">
+                        <span class="goods-tag font14">双11价</span>
+                        <span class="goods-price font20">¥699.00</span>
+                        <span class="goods-dis font16">满500减250</span>
+                    </div>
+                    <p class="goods-sold font16">2838人正在疯抢</p>
+                    <a class="btn font16" href="javascript:;">马上抢！</a>
+                </div>
+            </li>
+            <li>
+                <a class="goods" href="javascript:;">
+                    <img src="images/c.png" alt="">
+                </a>
+                <div class="goods-details">
+                    <p class="goods-til font16">ONLY2015秋装新品七分袖弹力修身针织衫女</p>
+                    <div class="dis-wrap">
+                        <span class="goods-tag font14">双11价</span>
+                        <span class="goods-price font20">¥700.00</span>
+                        <span class="goods-dis font16">满200减50</span>
+                    </div>
+                    <p class="goods-sold font16">2838人正在疯抢</p>
+                    <a class="btn font16" href="javascript:;">马上抢！</a>
+                </div>
+            </li>
+            <li>
+                <a class="goods" href="javascript:;">
+                    <img src="images/a.png" alt="">
+                </a>
+                <div class="goods-details">
+                    <p class="goods-til font16">ONLY2015秋装新品七分袖弹力修身针织衫女</p>
+                    <div class="dis-wrap">
+                        <span class="goods-tag font14">双11价</span>
+                        <span class="goods-price font20">¥700.00</span>
+                        <span class="goods-dis font16">满300减150</span>
+                    </div>
+                    <p class="goods-sold font16">2838人正在疯抢</p>
+                    <a class="btn font16" href="javascript:;">马上抢！</a>
+                </div>
+            </li>
+            <li>
+                <a class="goods" href="javascript:;">
+                    <img src="images/b.png" alt="">
+                </a>
+                <div class="goods-details">
+                    <p class="goods-til font16">现货【送皮套+钢模+耳机】Xiaomi/小米红米Note2手机note2</p>
+                    <div class="dis-wrap">
+                        <span class="goods-tag font14">双11价</span>
+                        <span class="goods-price font20">¥699.00</span>
+                        <span class="goods-dis font16">满500减250</span>
+                    </div>
+                    <p class="goods-sold font16">2838人正在疯抢</p>
+                    <a class="btn font16" href="javascript:;">马上抢！</a>
+                </div>
+            </li>
+            <li>
+                <a class="goods" href="javascript:;">
+                    <img src="images/c.png" alt="">
+                </a>
+                <div class="goods-details">
+                    <p class="goods-til font16">ONLY2015秋装新品七分袖弹力修身针织衫女</p>
+                    <div class="dis-wrap">
+                        <span class="goods-tag font14">双11价</span>
+                        <span class="goods-price font20">¥700.00</span>
+                        <span class="goods-dis font16">满200减50</span>
+                    </div>
+                    <p class="goods-sold font16">2838人正在疯抢</p>
+                    <a class="btn font16" href="javascript:;">马上抢！</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
